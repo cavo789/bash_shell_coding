@@ -1,2 +1,6 @@
 # bash_shell_coding
-Tips and tricks on how to write powerfull bash scripts
+
+![banner](./banner.svg)
+
+* [Working with JSON content](./json/readme)
+* [Working with XML content](./xml/readme)
