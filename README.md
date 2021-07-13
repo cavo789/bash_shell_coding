@@ -2,5 +2,5 @@
 
 ![banner](./banner.svg)
 
-* [Working with JSON content](tree/main/json)
-* [Working with XML content](tree/main/xml)
+* [Working with JSON content](main/json)
+* [Working with XML content](main/xml)
