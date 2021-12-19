@@ -125,9 +125,11 @@ function __logDestruct() {
     fi
 
     if [ -s  "${__LOGFILE}" ]; then
-        printGray "Run \"$(__binaryLogViewer) $__LOGFILE\" if your" \
+        echo ""
+        printGray "Run \"$(__binaryLogViewer) $__LOGFILE\" if you" \
             "want to see the content of the logfile or use the" \
             "--show-log-exit command line argument"
+        echo ""
     fi
 
 }
