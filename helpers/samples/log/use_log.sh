@@ -6,7 +6,7 @@
 #
 # The objective of this script is to illustrate how to use the `log.sh`
 # helper. Just include the file in your script and add here and there some
-# `log()` call like you can see in the `add()` function to get advantage
+# `log::write` calls like you can see in the `add()` function to get advantage
 # of the logging features.
 # 
 # ## How to use this script?
@@ -22,14 +22,19 @@
 #
 # endregion ----------------------------------------------------------
 
+# let script exit if an unsed variable is used or if a command fails
+set -o nounset
+set -o errexit
+
 SCRIPT_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 
-. $SCRIPT_DIR/../../log/log.sh
+# shellcheck disable=SC1091
+. "$SCRIPT_DIR"/../../log/log.sh
 
 function add() {
-    log "The add function has been called with $1 and $2" 
+    log::write "The add function has been called with $1 and $2" 
     result=$(($1+$2))
-    log "The addition of $1 and $2 gives $result"
+    log::write "The addition of $1 and $2 gives $result"
     echo $result
 }
 
