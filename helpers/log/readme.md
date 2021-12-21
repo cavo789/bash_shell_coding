@@ -1,9 +1,7 @@
 ## How to use this script?
 
 1. Include the script in your own Bash like this `. log.sh` (adjust path if needed).
-2. Here and there, where you want a log, just type `log "This is a log info"`
-
-You don't need to initialize things, just call the `log` function will be enough.
+2. Here and there, where you want a log, just type `log::write "This is a log info"`
 
 ## Command line arguments
 
