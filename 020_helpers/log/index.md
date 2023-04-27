@@ -1,3 +1,7 @@
+# The log helper
+
+> You can download the log helpers [here](log.sh)
+
 ## How to use this script?
 
 1. Include the script in your own Bash like this `. log.sh` (adjust path if needed).
@@ -11,8 +15,4 @@
 
 ## Dependency
 
-* `console.sh`
-
-## Sample
-
-* See `./../samples/use_log.sh`
+* [console.sh](./../console/console.sh)
